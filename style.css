@@ -1,0 +1,130 @@
+body {
+    background: #1c4d60; 
+    background-image: url('https://example.com/background-image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h2, label, p {
+    color: #fff;
+    margin: 8px 0;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+button {
+    background: #debff4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #8b48d7;
+}
+
+#temp-div p {
+    font-size: 60px;
+    margin-top: 20px; 
+}
+
+#weather-info {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#hourly-forecast {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+#daily-forecast {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.daily-forecast-item {
+    flex: 0 0 auto;
+    display: inline-block; 
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    width: 150px; 
+    margin-right: 10px; 
+    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 10px; 
+    margin-bottom: 20px; 
+}
+
+.daily-forecast-item:not(:last-child) {
+    margin-right: 10px; 
+}
+
+.daily-forecast-item p:first-child {
+    margin-bottom: 10px; 
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.weather-sunny {
+    background-image: url('https://example.com/sun.png'); 
+}
+
+.weather-cloudy {
+    background-image: url('https://example.com/cloud.png'); 
+}
+
+.weather-rainy {
+    background-image: url('https://example.com/rain.png'); 
+}
+
